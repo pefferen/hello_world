@@ -1,0 +1,7 @@
+name: Hello World
+type: module
+description: 'Saying Hello to the world.'
+package: custom
+version: 1.0
+core: 8.0
+dependencies:

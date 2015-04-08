@@ -1,0 +1,5 @@
+hello_world.main:
+  title: 'Hello World link'
+  description: 'Displays the hello world page'
+  parent: system.tools
+  route_name: hello_world.main
