@@ -2,9 +2,7 @@
 
 namespace Drupal\hello_world\Controller;
 
-use Drupal\Core\Controller\ControllerBase;
-
-class HelloWorldController extends ControllerBase {
+class HelloWorldController {
     /**
      * This function will be called from the routing subsystem, and displays our hello world page.
      */
