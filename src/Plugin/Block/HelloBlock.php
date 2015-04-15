@@ -19,8 +19,22 @@ class HelloBlock extends BlockBase {
    * {@inheritdoc}
    */
   public function build() {
+    // Get configuration.
+    $config = $this->getConfiguration();
+
+    // If we have a name in our configuration, use that otherwise use a default.
+    if (!empty($config['name'])) {
+      $name = $config['name'];
+    } else {
+      $name = $this->t('to no one');
+    }
+
+    // Return the block content with the entered name.
     return array(
-      '#markup' => $this->t('Hello World'),
+      '#markup' => $this->t('Hello @name!', array (
+          '@name' => $name,
+        )
+      ),
     );
   }
 
